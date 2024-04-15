@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class BinarySearch{
     static int BinSearch(int key, int[] a){
         int l = 0;
@@ -19,6 +21,7 @@ public class BinarySearch{
     }
     public static void main(String[] args) {
         int[] a = {3,5,6,8,12,15,16,19,21};
+        Arrays.sort(a);
         int key = 13;
         System.out.println(BinSearch(key,a));
     }
