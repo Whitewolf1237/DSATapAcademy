@@ -19,10 +19,22 @@ public class BinarySearch{
         }
         return -1;
     }
+
+    static int cielOfNumber(int[] a,int n){
+        Arrays.sort(a);
+        for(int i =0;i<a.length;i++){
+            if(a[i]>=n){
+                return a[i];
+            }
+            
+        }
+        return -1;
+    }
     public static void main(String[] args) {
         int[] a = {3,5,6,8,12,15,16,19,21};
         Arrays.sort(a);
         int key = 13;
         System.out.println(BinSearch(key,a));
+        System.out.println(cielOfNumber(a, 20));
     }
 }
