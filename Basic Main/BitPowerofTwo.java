@@ -1,5 +1,7 @@
+package Graph;
 public class BitPowerofTwo {
-    static boolean powOfTwo(int n){
+    static bo
+    olean powOfTwo(int n){
         if(n<=0){
             return false;
         }

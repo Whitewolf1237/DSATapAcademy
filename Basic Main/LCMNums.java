@@ -1,6 +1,11 @@
+package Graph;
 import java.util.Scanner;
 
-public class GcdofNums {
+public class LCMNums {
+
+    static int findLcmMain(int a,int b){
+        return (a*b)/euclidsGCD(a, b);
+    }
 
     static int euclidsGCD(int a, int b){  //euclids method
         while(a!=b){    
@@ -14,23 +19,21 @@ public class GcdofNums {
         return a;
     }
 
-    static int GCD(int a, int b){    //brainstorm method
-        int minNum=Math.min(a, b);
-        int res=0;
-        for(int i=minNum;i>=1;i--){
-            if(a%i==0 && b%i==0){
-                res=i;
+    static int findLCM(int a,int b){
+        int res=Math.max(a, b);  //point from where we have to start iteration
+        while(true){
+            if(res%a==0 && res%b==0){
                 break;
             }
+            res++;
         }
         return res;
     }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int b = scan.nextInt();
-        System.out.println(GCD(a, b));
-        System.out.println(euclidsGCD(a, b));
+        System.out.println(findLcmMain(a, b));
     }
-    
 }

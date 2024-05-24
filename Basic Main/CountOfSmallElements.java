@@ -1,3 +1,4 @@
+package Graph;
 public class CountOfSmallElements{
     static int countSmallAndEqualElements(int[] a,int key){
 

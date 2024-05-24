@@ -1,3 +1,4 @@
+package Graph;
 public class Toggle {
     public static void main(String[] args) {
         int n = 36;

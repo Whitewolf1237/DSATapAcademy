@@ -1,3 +1,4 @@
+package Graph;
 public class FirstAndLastPos {
     static int[] SearchRange(int[] a,int key){
         int l=0,h=a.length-1,mid=0;

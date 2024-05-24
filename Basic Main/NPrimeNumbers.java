@@ -1,3 +1,4 @@
+package Graph;
 public class NPrimeNumbers {
 
     static void sievePrintPrime(int n){

@@ -1,3 +1,4 @@
+package Graph;
 public class rightMostSetBit {
     static int posOfRMSPEasy(int n){
         // int m = n & (n-1);

@@ -1,3 +1,4 @@
+package Graph;
 public class Divisors {
 
     static void printDivisors(int n){
